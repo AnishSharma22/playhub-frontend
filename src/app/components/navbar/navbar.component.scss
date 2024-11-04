@@ -1,0 +1,60 @@
+.logo-container {
+  background: #2a2a2a;
+}
+
+.logo {
+  font-size: 32px;
+  background: linear-gradient(
+    to right,
+    #00cfff,
+    #a067ff
+  ); /* Gradient background */
+  -webkit-background-clip: text; /* For webkit-based browsers */
+  color: transparent; /* Make the text transparent to show the gradient */
+}
+
+.custom-purple-button {
+  background-color: #530061 !important;
+  border-color: black !important;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: none;
+}
+
+.custom-purple-button:hover {
+  background-color: #40004a !important;
+  border-color: black !important;
+}
+
+.p-button-contrast {
+  background-color: transparent !important;
+  border-color: black !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.p-button-contrast:hover {
+  //background-color: purple !important;
+  border-color: #40004a !important;
+}
+
+/* Link Styling */
+.flex a {
+  font-family: 'Raleway', sans-serif;
+  padding-top:10px;
+  font-size: 14px;
+  color: white; /* Original color of the links */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover Effect */
+.flex a:hover {
+  color: #530061; /* Hover color */
+  text-decoration: underline;
+  text-decoration-color: white; /* Underline color */
+  text-underline-offset: 8px; /* Adds space between text and underline */
+  cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,104 @@
+/* Full-page grid background */
+.grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0f0f; /* Solid dark background */
+  z-index: -1; /* Place behind all content */
+
+  /* Grid lines with opacity */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 2px, transparent 2px); /* Vertical lines */
+  background-size: 100px 100px; /* Set grid square size */
+}
+
+/* Main content styling */
+.native {
+  position: relative;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh; /* Full viewport height */
+  z-index: 1; /* Ensure content appears above the grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-container {
+  flex-grow: 1; /* Take remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+
+.search-bar {
+  background: #1d1d1d;
+  color:#4a4a4a;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  max-height: 50px;
+}
+
+//.h-9/10 {
+//  height: 90%; /* Set height to 90% */
+//}
+
+
+///* Container holding the photos */
+//.photos-container {
+//  display: flex;
+//  width: 100%;
+//  gap: 1rem;                  /* Adds space between each child div */
+//  padding: 0.5rem;
+//  overflow-x: auto;           /* Enables horizontal scrolling */
+//}
+//
+///* Child div styling */
+//.photos-container > div {
+//  background-color: #ffeb3b;  /* Example background color */
+//  flex: 1;                    /* Makes each child div take equal width */
+//  min-width: 30%;             /* Ensures child div width without collapsing */
+//  min-height: 100%;           /* Fills height within the parent */
+//  border-radius: 4px;
+//  padding: 1rem;
+//  box-sizing: border-box;
+//}
+
+
+//.img {
+//  width: 100%;      /* Make the image width match the container width */
+//  height: 100%;     /* Make the image height match the container height */
+//  object-fit: fill; /* Scale the image to cover the container without distortion */
+//}
+
+.photos-container {
+  max-width: 100%;         /* Full-width container */
+  overflow-x: auto;        /* Enable horizontal scrolling */
+  overflow-y: hidden;      /* Hide vertical overflow */
+  white-space: nowrap;     /* Prevent items from wrapping */
+}
+
+.photo-item {
+  flex: 0 0 20rem;         /* Fixed width of 20rem for each item */
+  display: inline-flex;    /* Ensure items stay in a row */
+}
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 90%;             /* Adjust to leave space for the title */
+  }
+
+

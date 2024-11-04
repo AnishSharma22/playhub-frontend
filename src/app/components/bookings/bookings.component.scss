@@ -1,0 +1,54 @@
+/* Full-page grid background */
+.grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0f0f; /* Solid dark background */
+  z-index: -1; /* Place behind all content */
+
+  /* Grid lines with opacity */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.02) 2px,
+      transparent 2px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 2px, transparent 2px); /* Vertical lines */
+  background-size: 100px 100px; /* Set grid square size */
+}
+
+/* Main content styling */
+.native {
+  position: relative;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  height: 100vh; /* Full viewport height */
+  z-index: 1; /* Ensure content appears above the grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-container {
+  flex-grow: 1; /* Take remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+
+.search-bar {
+  background: #1d1d1d;
+  color: #4a4a4a;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  max-height: 50px;
+}

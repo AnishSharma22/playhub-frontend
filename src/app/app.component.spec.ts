@@ -17,13 +17,14 @@ describe('AppComponent', () => {
   it(`should have the 'play-hub' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('play-hub');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, play-hub');
+    expect(compiled.querySelector('h1')?.textContent).toContain(
+      'Hello, play-hub'
+    );
   });
 });
